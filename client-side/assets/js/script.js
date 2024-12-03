@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function resetToSignUp() {
         welcomeUserElement.textContent = "Welcome!";
         authButtons.innerHTML = `
-            <a href="https://node-taskmaster.netlify.app/login.html"
+            <a href="https://daniyo-task-master.vercel.app/login.html"
                class="ms-auto btn btn-md rounded-2 py-1 ps-3 pe-3 text-light signup fw-bold">
                Login
             </a>
@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
         clearUserSession();
         // alert("You have been logged out.");
         // window.location.reload(); // Reload to reset UI
-        window.location.href = 'https://node-taskmaster.netlify.app/login.html';
+        window.location.href = 'https://daniyo-task-master.vercel.app/login.html';
     }
 
     // Call the function to display the welcome message on page load
@@ -85,68 +85,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// document.getElementById("createTaskForm").addEventListener("submit", async function (event) {
-//     event.preventDefault();
-
-//     // Collect form data
-//     const title = document.getElementById("taskTitle").value;
-//     const description = document.getElementById("taskDescription").value;
-//     const status = document.getElementById("taskStatus").value;
-//     const dueDate = document.getElementById("dueDate").value;
-//     const assignedUsersInput = document.getElementById("assignedUsers").value;
-//     const files = document.getElementById("taskFiles").files;
-
-//     // Convert assigned users input to an array of emails
-//     const assignedUsers = assignedUsersInput.split(',').map(email => email.trim());
-
-//     // Prepare form data (including files)
-//     const formData = new FormData();
-//     formData.append("title", title);
-//     formData.append("description", description);
-//     formData.append("status", status);
-//     formData.append("dueDate", dueDate);
-//     formData.append("assignedUsers", JSON.stringify(assignedUsers)); // Stringify the array
-//     // Attach files
-//     Array.from(files).forEach(file => formData.append("files", file));
-
-//     console.log('form date =============>', formData);
-
-
-
-
-//     // Retrieve token from localStorage
-//     const token = localStorage.getItem("jwtToken");
-//     console.log("Token from localStorage==========> ", token);
-
-//     // Define API endpoint
-//     const apiEndpoint = "http://localhost:5000/create";
-
-//     try {
-//         // Send POST request with form data
-//         const response = await fetch(apiEndpoint, {
-//             method: "POST",
-//             headers: {
-//                 "Authorization": `Bearer ${token}`,
-//             },
-//             body: formData,
-
-//         });
-
-
-//         const data = await response.json();
-//         const responseMessage = document.getElementById("responseMessage");
-
-//         // Handle response
-//         if (response.ok) {
-//             responseMessage.innerHTML = `<div class="alert alert-success">${data.message}</div>`;
-//         } else {
-//             responseMessage.innerHTML = `<div class="alert alert-danger">${data.message || "An error occurred"}</div>`;
-//         }
-//     } catch (error) {
-//         console.error("Error:", error);
-//         document.getElementById("responseMessage").innerHTML = `<div class="alert alert-danger">Failed to create task</div>`;
-//     }
-// });
 
 
 document.getElementById("createTaskForm").addEventListener("submit", async function (event) {

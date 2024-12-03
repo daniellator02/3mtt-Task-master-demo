@@ -38,7 +38,7 @@ document.getElementById('signupForm').addEventListener('submit', async (event) =
 
             // Redirect to login page after a delay
             setTimeout(() => {
-                window.location.href = 'https://node-taskmaster.netlify.app/login.html';
+                window.location.href = 'https://daniyo-task-master.vercel.app/login.html';
             }, 2000);
         } else {
             // Handle errors

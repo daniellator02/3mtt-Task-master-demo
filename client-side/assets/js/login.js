@@ -33,7 +33,7 @@ document.getElementById('loginForm').addEventListener('submit', async (event) =>
 
             // Redirect to dashboard page after a delay
             setTimeout(() => {
-                window.location.href = 'https://node-taskmaster.netlify.app/';
+                window.location.href = 'https://daniyo-task-master.vercel.app/';
             }, 2000);
         } else {
             // Handle login errors
