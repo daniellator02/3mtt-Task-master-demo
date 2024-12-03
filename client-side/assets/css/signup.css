@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cedarville+Cursive&family=Itim&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Wet+Paint&family=Unlock&display=swap');
+
+* {
+    font-family: "Poppins", serif;
+}
+
+body {
+    height: 100vh;
+}
+
+.addUser {
+    background-color: white;
+    width: 80%;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+}
+
+::placeholder {
+    font-size: .85rem;
+}
+
+.addUserForm .inputGroup {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.addUserForm .inputGroup label {
+    margin-top: 10px;
+}
+
+.addUserForm .inputGroup input {
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.inputGroup button {
+    margin-top: 10px;
+}
+
+.login {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.login .btn.btn-primary {
+    width: 50%;
+}
+
+.addUser h3 {
+    text-align: center;
+    font-weight: bold;
+    font-family: "Rubik Wet Paint", serif;
+    font-size: 2rem;
+    color: #198754;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.svg-part {
+    color: #198754;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/main.242b8b1ce339b38fd589.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/bs/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/signup.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="row container-fluid">
+        <div
+            class="col-xl-6 col-md-6 col-sm-12 bg-light d-flex flex-column align-items-center justify-content-center svg-part">
+            <svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" fill="currentColor"
+                class="bi bi-ui-checks-grid" viewBox="0 0 16 16">
+                <path
+                    d="M2 10h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1zm9-9h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zm0 9a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-3zm0-10a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2h-3zM2 9a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H2zm7 2a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2v-3zM0 2a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.354.854a.5.5 0 1 0-.708-.708L3 3.793l-.646-.647a.5.5 0 1 0-.708.708l1 1a.5.5 0 0 0 .708 0l2-2z" />
+            </svg>
+            <h1 class="mt-2 svg-text">TaskMaster</h1>
+            <p>Manage all your tasks in one place!</p>
+        </div>
+        <div class="col-xl-6 col-md-6 col-sm-12 ">
+            <div class="addUser">
+                <h3>SIGNUP</h3>
+
+                <div id="alertPlaceholder"></div>
+
+                <form id="signupForm" class="addUserForm">
+                    <div class="inputGroup">
+                        <label htmlFor="name">Name:</label>
+                        <input type="text" id="name" name="name" required class="form-control" placeholder="Your Name"
+                            autoComplete="off">
+                        <label htmlFor="email">Email:</label>
+                        <input type="email" id="email" name="email" required class="form-control"
+                            placeholder="Your Email" autoComplete="off">
+                        <label htmlFor="Password">Password:</label>
+                        <input type="password" id="password" name="password" required class="form-control"
+                            autoComplete="off" placeholder="Enter Password">
+                        <label htmlFor="confirmPassword">Confirm Password:</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required class="form-control"
+                            placeholder="Confirm your password">
+                        <label htmlFor="Password">Role:</label>
+                        <input type="text" id="role" name="role" required class="form-control" placeholder="Your Role"
+                            autoComplete="off">
+                        <label htmlFor="Password">Title:</label>
+                        <input type="text" id="title" name="title" required class="form-control"
+                            placeholder="Your Title" autoComplete="off">
+                        <label htmlFor="admin" class="d-flex align-items-center gap-2">
+                            <!-- checked -->
+                            <input type="checkbox" id="admin" required class="form-check-input" />
+                            Admin
+                        </label>
+
+                        <button type="submit" class="btn btn-lg btn-success mt-4 fw-bold">
+                            Sign Up
+                        </button>
+                    </div>
+                </form>
+                <div class="login">
+                    <p>Already have an Account?
+                        <a href="./login.html" type="submit" class="text-dark">Login</a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./assets/bs/bootstrap.bundle.js"></script>
+    <script src="./assets/js/signup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cedarville+Cursive&family=Itim&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Wet+Paint&family=Unlock&display=swap');
+
+* {
+    font-family: "Poppins", serif;
+    padding: 0;
+    margin: 0;
+}
+
+button,
+.btn {
+    background-color: #198754;
+    border-radius: 7px;
+
+}
+
+::placeholder {
+    font-size: .85rem;
+}
+
+main .background-image .navbar {
+    background-color: #000;
+}
+
+
+.signup {
+    background-color: #198754;
+}
+
+main .taskmaster {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    /* linear-gradient(to top, transparent 10%, black 100%),  */
+    background-image: linear-gradient(to top, transparent 10%, #198754 100%), url(../images/contact-one.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+main .background-image .taskmaster h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+main .background-image .taskmaster form button {
+    width: 60%;
+    background-color: #198754;
+    font-weight: bold;
+    color: #fff;
+}
+
+.task {
+    display: inline-flex;
+    margin-top: 20px;
+    padding-left: 10px;
+
+}
+
+.card {
+    border-radius: 5px;
+    height: 330px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 0;
+    background-color: #198754;
+}
+
+.modal form input {
+    padding: 12px;
+    border-radius: 7px;
+}
+
+.modal form select {
+    padding: 12px;
+    border-radius: 7px;
+}
+
+.modal form textarea {
+    border-radius: 7px;
+    height: 100px;
+    resize: none;
+}
+
+.modal .modal-footer button {
+    padding: 13px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.edit-and-delete a svg {
+    color: #fff;
+}

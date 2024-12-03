@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/images/main.242b8b1ce339b38fd589.png" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/bs/bootstrap.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>TaskMaster</title>
+</head>
+
+<body>
+
+  <main>
+    <div class="background-image">
+
+      <nav class="navbar navbar-expand-lg navbar-light" id="nav-bar">
+        <div class="container">
+          <div class="">
+            <a class="navbar-brand text-light fw-bold" href="index.html">
+              <!-- <img src="../frontView/assets/images/main.242b8b1ce339b38fd589.png" alt="" width="40">  -->TASKMASTER
+            </a>
+          </div>
+
+          <div class="collapse navbar-collapse ms-auto" id="navbarSupportedContent">
+            <div id="authButtons">
+              <a href="https://node-taskmaster.netlify.app/login.html"
+                class="ms-auto btn btn-md rounded-2 py-1 ps-3 pe-3 text-light signup fw-bold">
+                Login
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </nav>
+
+
+      <div class="taskmaster text-center">
+        <h1 class=""> <b id="welcomeUser"></b> </h1>
+        <h4 class="">Manage your tasks.</h4>
+        <p>Ready to add, edit, delete and keep track of your tasks.</p>
+        <form class="d-flex ">
+          <div class="form-floating mb-3 d-flex ">
+            <input type="text" class="form-control" id="floatingInput" placeholder="search here..." required>
+            <label for="floatingInput">Search</label>
+
+            <button class="btn btn-md ms-2" type="submit">Get Task</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <section class="container my-3">
+    <button type="button" class="btn btn-lg text-light fw-bold" data-bs-toggle="modal"
+      data-bs-target="#exampleModal">Add
+      Task</button>
+
+    <div id="taskList"></div>
+
+  </section>
+
+  <section class="container my-3">
+    <h3>Tasks Assigned To You</h3>
+    <div id="tasks-container">
+      <!-- Tasks will be dynamically rendered here -->
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Modal -->
+  <div class="modal-div">
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Add Your Task</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="responseMessage" class="mt-3"></div>
+
+            <form id="createTaskForm">
+              <div class="row">
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">Title:</label>
+                  <input type="text" class="form-control" id="taskTitle" placeholder="Add a title">
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12">
+                  <div class="mb-3">
+                    <label for="files" class="col-form-label">Files:</label>
+                    <input type="file" class="form-control" id="taskFiles" multiple>
+                  </div>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12">
+                  <div class="mb-3">
+                    <label for="assigned-users" class="col-form-label">Assigned Users:</label>
+                    <input type="text" class="form-control" id="assignedUsers"
+                      placeholder="e.g 'jane@gmail.com, stephen@gmail.com'">
+                  </div>
+                </div>
+
+                <div class="col-xl-6 col-md-6 col-sm-12">
+                  <div class="mb-3">
+                    <label for="status" class="col-form-label">Status:</label>
+                    <select name="" id="taskStatus" class="form-select">
+                      <option value="todo">Todo</option>
+                      <option value="in progress">In Progress</option>
+                      <option value="done">Pending</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12">
+                  <div class="mb-3">
+                    <label for="duedate" class="col-form-label">Due Date:</label>
+                    <input type="datetime-local" class="form-control" id="dueDate">
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="description" class="col-form-label">Descrption:</label>
+                  <textarea class="form-control" id="taskDescription" placeholder="add task description"></textarea>
+                </div>
+
+              </div>
+
+              <div class="modal-footer">
+                <button type="submit" class="btn">Add Task</button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for edit -->
+
+
+
+
+  <script src="./assets/bs/bootstrap.bundle.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
